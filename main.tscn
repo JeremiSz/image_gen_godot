@@ -1,0 +1,531 @@
+[gd_scene load_steps=6 format=3 uid="uid://bl3uioo1uxwbt"]
+
+[ext_resource type="Script" path="res://shaders/controler.gd" id="1_ewfj6"]
+[ext_resource type="Shader" path="res://shaders/square.gdshader" id="1_ppj1t"]
+[ext_resource type="Shader" path="res://shaders/circle.gdshader" id="3_ne4f6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t1fj2"]
+shader = ExtResource("1_ppj1t")
+shader_parameter/edges = Vector4(0.25, 0.25, 0.75, 0.75)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a3oel"]
+shader = ExtResource("3_ne4f6")
+shader_parameter/data = Vector4(0.5, 0.5, 0.1, 0)
+
+[node name="Control5" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ewfj6")
+shader_sqr = ExtResource("1_ppj1t")
+shader_circ = ExtResource("3_ne4f6")
+rounds = 2000
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="ColorRect2" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_right = 64.0
+offset_bottom = 32.0
+
+[node name="ColorRect3" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 32.0
+offset_right = 32.0
+offset_bottom = 64.0
+
+[node name="ColorRect4" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="ColorRect5" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_right = 96.0
+offset_bottom = 32.0
+
+[node name="ColorRect6" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_right = 128.0
+offset_bottom = 32.0
+
+[node name="ColorRect7" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 96.0
+offset_bottom = 64.0
+
+[node name="ColorRect8" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 64.0
+
+[node name="ColorRect9" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 64.0
+offset_right = 32.0
+offset_bottom = 96.0
+
+[node name="ColorRect10" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 96.0
+
+[node name="ColorRect11" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 96.0
+offset_right = 32.0
+offset_bottom = 128.0
+
+[node name="ColorRect12" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 96.0
+offset_right = 64.0
+offset_bottom = 128.0
+
+[node name="ColorRect13" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+
+[node name="ColorRect14" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 96.0
+
+[node name="ColorRect15" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 128.0
+
+[node name="ColorRect16" type="ColorRect" parent="Control" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 128.0
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 128.0
+offset_right = 256.0
+offset_bottom = 128.0
+
+[node name="ColorRect" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="ColorRect2" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_right = 64.0
+offset_bottom = 32.0
+
+[node name="ColorRect3" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 32.0
+offset_right = 32.0
+offset_bottom = 64.0
+
+[node name="ColorRect4" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="ColorRect5" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_right = 96.0
+offset_bottom = 32.0
+
+[node name="ColorRect6" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_right = 128.0
+offset_bottom = 32.0
+
+[node name="ColorRect7" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 96.0
+offset_bottom = 64.0
+
+[node name="ColorRect8" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 64.0
+
+[node name="ColorRect9" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 64.0
+offset_right = 32.0
+offset_bottom = 96.0
+
+[node name="ColorRect10" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 96.0
+
+[node name="ColorRect11" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 96.0
+offset_right = 32.0
+offset_bottom = 128.0
+
+[node name="ColorRect12" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 96.0
+offset_right = 64.0
+offset_bottom = 128.0
+
+[node name="ColorRect13" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+
+[node name="ColorRect14" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 96.0
+
+[node name="ColorRect15" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 128.0
+
+[node name="ColorRect16" type="ColorRect" parent="Control2" groups=["canvases", "square"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 128.0
+
+[node name="Control3" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 128.0
+offset_right = 128.0
+offset_bottom = 256.0
+
+[node name="ColorRect" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="ColorRect2" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_right = 64.0
+offset_bottom = 32.0
+
+[node name="ColorRect3" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 32.0
+offset_right = 32.0
+offset_bottom = 64.0
+
+[node name="ColorRect4" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="ColorRect5" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_right = 96.0
+offset_bottom = 32.0
+
+[node name="ColorRect6" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_right = 128.0
+offset_bottom = 32.0
+
+[node name="ColorRect7" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 96.0
+offset_bottom = 64.0
+
+[node name="ColorRect8" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 64.0
+
+[node name="ColorRect9" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 64.0
+offset_right = 32.0
+offset_bottom = 96.0
+
+[node name="ColorRect10" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 96.0
+
+[node name="ColorRect11" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 96.0
+offset_right = 32.0
+offset_bottom = 128.0
+
+[node name="ColorRect12" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 96.0
+offset_right = 64.0
+offset_bottom = 128.0
+
+[node name="ColorRect13" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+
+[node name="ColorRect14" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 96.0
+
+[node name="ColorRect15" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 128.0
+
+[node name="ColorRect16" type="ColorRect" parent="Control3" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 128.0
+
+[node name="Control4" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 256.0
+offset_bottom = 256.0
+
+[node name="ColorRect" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_a3oel")
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="ColorRect2" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_right = 64.0
+offset_bottom = 32.0
+
+[node name="ColorRect3" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 32.0
+offset_right = 32.0
+offset_bottom = 64.0
+
+[node name="ColorRect4" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="ColorRect5" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_right = 96.0
+offset_bottom = 32.0
+
+[node name="ColorRect6" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_right = 128.0
+offset_bottom = 32.0
+
+[node name="ColorRect7" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 96.0
+offset_bottom = 64.0
+
+[node name="ColorRect8" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 64.0
+
+[node name="ColorRect9" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 64.0
+offset_right = 32.0
+offset_bottom = 96.0
+
+[node name="ColorRect10" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 96.0
+
+[node name="ColorRect11" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_top = 96.0
+offset_right = 32.0
+offset_bottom = 128.0
+
+[node name="ColorRect12" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 32.0
+offset_top = 96.0
+offset_right = 64.0
+offset_bottom = 128.0
+
+[node name="ColorRect13" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+
+[node name="ColorRect14" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 96.0
+
+[node name="ColorRect15" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 128.0
+
+[node name="ColorRect16" type="ColorRect" parent="Control4" groups=["canvases", "circle"]]
+material = SubResource("ShaderMaterial_t1fj2")
+layout_mode = 0
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 128.0
